@@ -15,19 +15,28 @@ body{
 .container {
   width: 100%;
   background-color: var(--violet);
+  background: url(../img/bg-mobile.svg) no-repeat;
+  background-size: contain;
 }
 .container .header .logo {
   margin-top: 1rem;
   margin-left: 1rem;
   width: 120px;
 }
+.container .hero .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .container .hero .wrapper .imgSrc {
-  width: 280px;
-  margin: 2rem 1rem 2rem 1rem;
+  width: 275px;
+  margin: 2.5rem 1rem 3rem 1rem;
 }
 .container .hero .wrapper .hero_description {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .container .hero .wrapper .hero_description .title_h1 {
@@ -54,8 +63,7 @@ body{
   border-radius: 50px;
   box-shadow: var(--border);
   padding: 8px;
-  margin-right: 5rem;
-  margin-left: 5rem;
+  width: 190px;
 }
 .footer {
   color: var(--white);
@@ -74,4 +82,20 @@ body{
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 375px) {
+  .container .hero .wrapper .imgSrc {
+    width: 325px;
+    margin-top: 3.5rem;
+  }
+  .container .hero .wrapper .hero_description .title_h1 {
+    font-size: 25px;
+  }
+  .container .hero .wrapper .hero_description .copy {
+    font-size: 17px;
+  }
+  .container .hero .wrapper .hero_description .button {
+    font-size: 12px;
+    width: 190px;
+  }
 }
