@@ -99,3 +99,81 @@ body{
     width: 190px;
   }
 }
+@media screen and (min-width: 768px) {
+  .container {
+    height: 100vh;
+    background: url(../img/bg-desktop.svg) no-repeat;
+    background-size: cover;
+  }
+  .container .hero .wrapper {
+    flex-direction: row;
+  }
+  .container .hero .wrapper .imgSrc {
+    width: 445px;
+    margin-top: 5rem;
+  }
+  .container .hero .wrapper .hero_description {
+    align-items: flex-start;
+    margin-left: 1rem;
+  }
+  .container .hero .wrapper .hero_description .title_h1 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+  .container .hero .wrapper .hero_description .copy {
+    font-size: 10px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+  .container .hero .wrapper .hero_description .button {
+    width: 130px;
+  }
+  .footer {
+    position: relative;
+    top: 40px;
+    margin-top: 0;
+    margin-right: 4rem;
+    justify-content: flex-end;
+  }
+  .footer .span {
+    margin: 0 5px 0 5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    background-size: contain;
+  }
+  .container .header .logo {
+    margin-left: 3rem;
+  }
+  .container .hero .wrapper .imgSrc {
+    width: 600px;
+    margin-top: 6.4rem;
+    margin-left: 3rem;
+  }
+  .container .hero .wrapper .hero_description .title_h1 {
+    font-size: 50px;
+    text-align: left;
+    /* margin-left: 0; */
+    margin-right: 3rem;
+  }
+  .container .hero .wrapper .hero_description .copy {
+    font-size: 22px;
+    text-align: left;
+    /* margin-left: 0; */
+    margin-right: 3rem;
+  }
+  .container .hero .wrapper .hero_description .button {
+    font-size: 16px;
+    font-weight: 700;
+    width: 240px;
+    padding: 14px;
+  }
+  .footer {
+    margin-right: 3rem;
+    top: -10px;
+  }
+}
