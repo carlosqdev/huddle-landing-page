@@ -1,7 +1,7 @@
 :root  {
   --violet: #674AAE;
   --white: #FFF;
-  --border: #5e42a5;
+  --border: #6c55a5;
 }
 * {
   margin: 0px;
@@ -59,11 +59,19 @@ body{
 }
 .footer {
   color: var(--white);
-  margin: 1rem 5rem 1rem 5rem;
+  margin: 4rem 5rem 1rem 5rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 .footer .span {
-  
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--white);
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
