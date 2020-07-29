@@ -1,7 +1,8 @@
 :root  {
   --violet: #674AAE;
   --white: #FFF;
-  --border: #6c55a5;
+  --border: #5c5079;
+  --buttonHover: #039cfa;
 }
 * {
   margin: 0px;
@@ -61,9 +62,16 @@ body{
   color: var(--violet);
   background-color: var(--white);
   border-radius: 50px;
-  box-shadow: var(--border);
+  border-color: transparent;
+  box-shadow: 2px 2px 2px 2px var(--border);
+  outline: none;
   padding: 8px;
   width: 190px;
+}
+.container .hero .wrapper .hero_description .button:hover {
+  color: var(--white);
+  background-color: var(--buttonHover);
+  transition: 0.7s ease all;
 }
 .footer {
   color: var(--white);
@@ -147,11 +155,12 @@ body{
     background-size: contain;
   }
   .container .header .logo {
+    width: 160px;
     margin-left: 3rem;
   }
   .container .hero .wrapper .imgSrc {
     width: 600px;
-    margin-top: 6.4rem;
+    margin-top: 6rem;
     margin-left: 3rem;
   }
   .container .hero .wrapper .hero_description .title_h1 {
@@ -174,6 +183,6 @@ body{
   }
   .footer {
     margin-right: 3rem;
-    top: -10px;
+    top: -15px;
   }
 }
